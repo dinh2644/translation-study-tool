@@ -69,7 +69,7 @@ See the image below for a visual reference:
 
 ## 4. Run Docker (in /src/ or whereever compose.yml is at)
 
-### In /445_stuff/portfolio-team7/src
+### In /src
 ```bash
 # (just in case)
 docker compose down
