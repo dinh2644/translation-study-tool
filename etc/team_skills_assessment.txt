@@ -1,0 +1,8 @@
+Tu Dinh:
+Tools: JavaScript, Python, C++, C, C#, Java
+Frameworks: React/Next.js, HTML/CSS/Tailwind
+Other: SQL Server, SharePoint, PowerShell/ISE, MongoDB, Supabase, Firebase, Gemini API, Git, Pinecone
+Varun Dileepan: 
+Tools: Java, C, C++, JavaScript, Python, Typescript, HTML, MySQL, SQLAlchemy, NoSQL
+Frameworks: React, Next.js, Flask
+Other:

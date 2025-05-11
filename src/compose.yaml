@@ -1,0 +1,59 @@
+services:
+  nextjs:
+    container_name: src-nextjs
+    build:
+      context: ./nextjs
+      dockerfile: Dockerfile
+    env_file:
+      - ./nextjs/.env.local
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - fastapi
+      - mongodb
+      - redis
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nextjs:/usr/src/app
+      - /usr/src/app/node_modules
+    develop:
+      watch:
+        - path: ./nextjs/package.json
+          action: rebuild
+        - path: ./nextjs/package-lock.json
+          action: rebuild
+        - path: ./nextjs/next.config.ts
+          action: rebuild
+        - path: ./nextjs
+          target: /usr/src/app
+          action: sync
+  fastapi:
+    container_name: src-fastapi
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./fastapi:/app
+  mongodb:
+    container_name: src-mongodb
+    image: mongo:6
+    ports:
+      - 27017:27017
+    volumes:
+      - database:/data/db
+  redis:
+    container_name: src-redis
+    image: redis:7
+    ports:
+      - 6379:6379
+    volumes:
+      - redisdata:/data
+
+volumes:
+  database:
+    name: "database"
+  redisdata:
+    name: "redisdata"

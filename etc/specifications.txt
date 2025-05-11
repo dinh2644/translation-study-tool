@@ -1,0 +1,41 @@
+How will you use this application?
+I will use the application to allow clients who wants to view videos in foreign languages but does not understand the language. This application will provide live translations to people who do not understand the specific language in english. Additionally, the user will be able to select certain words and phrases and create a vocabulary bank and use Gemini to create flashcards.  
+
+Where would the user be located physically when using this application?
+The user would be located anywhere in the world physically in either home or a school.
+
+Where would the results be visible?
+The results would be visible on the personalized account every user has. 
+
+When will this application be used?
+This application will be used when a client wants to watch a certain video in a foreign language but does not understand the lanugage, see english translations to better help understand the language, and pick specific phrases for users to memorize.
+
+When can the application fail?
+The application can fail when Artificial Intelligence changes the meaning of some of the translations used and the Translation API makes translation errors in rare circumstances. 
+
+Who is my user?
+My user is an individual who is trying to watch videos in foreign languages but cannot understand the foreign language.
+
+Who will deliver the inputs for the application?
+The inputs for the application will be delivered by the user.
+
+Who will receive the outputs of the application?
+The designated user. 
+
+What do I know about this application?
+I know its a translation web app.
+
+What does this application need to do?
+This application needs to be able to allow users to watch videos with foreign lanugages and write translations as needed.
+
+What are the components of this application?
+Personalized dashboard/GUI, database, and, customized APIs end point.
+
+What needs to happen next?
+We need to do marketing of the app and promote it.
+
+What must happen before the next step?
+Before doing any marketing we need to do extensive testing.
+
+What needs to be tracked?
+We need to be able to track all users, most recently viewed video for users and all of the previous flashcard decks that a designated user created.
